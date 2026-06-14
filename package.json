@@ -1,7 +1,13 @@
 {
-  "name": "ephai-workspace",
+  "name": "ephai-agent",
   "private": true,
   "packageManager": "pnpm@10.23.0",
+  "scripts": {
+    "typecheck": "pnpm -r run typecheck",
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test",
+    "check": "pnpm -r run check"
+  },
   "pnpm": {
     "onlyBuiltDependencies": ["esbuild"]
   }

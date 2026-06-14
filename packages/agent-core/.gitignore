@@ -33,8 +33,6 @@ test-results/
 .eslintcache
 .vite/
 
-# code_map explorer generated output (keep only code_map/scripts/)
+# Local/generated code inventory artifacts
 /code_map_index.html
-/code_map/**
-!/code_map/scripts/
-!/code_map/scripts/**
+/code_map/

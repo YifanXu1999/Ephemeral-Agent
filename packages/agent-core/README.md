@@ -225,12 +225,6 @@ check` and never run in CI.
 
 ## Code explorer
 
-This repo ships a static, IDE-like explorer for the SDK — module map, symbol
-graph with go-to-definition / find-references, and test coverage:
-
-```bash
-bash code_map/scripts/refresh.sh   # extract symbols → render HTML
-open code_map_index.html           # entry page
-```
-
-Generated output is git-ignored; only `code_map/scripts/` is tracked.
+Code explorer artifacts are local generated inventory output and are not tracked
+in this package. In the composed workspace, keep those files under the parent
+repository's ignored `code-inventory/` directory.

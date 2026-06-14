@@ -40,3 +40,7 @@ test-results/
 *.tsbuildinfo
 .eslintcache
 .vite/
+
+# Local/generated code inventory artifacts
+**/code_map/
+**/code_map_index.html
