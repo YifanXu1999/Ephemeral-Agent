@@ -1,0 +1,24 @@
+[
+  {
+    "event": "preToolUse",
+    "hook": "advisor_approval",
+    "module": {
+      "path": "advisor-hook.ts",
+      "export": "requireAdvisoryPass"
+    }
+  },
+  {
+    "event": "turnBoundary",
+    "command": {
+      "command": "node budget-reminder.cjs",
+      "timeout_ms": 5000
+    }
+  },
+  {
+    "event": "turnBoundary",
+    "command": {
+      "command": "node remind-terminal-submission.cjs",
+      "timeout_ms": 5000
+    }
+  }
+]
